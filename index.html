@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFood</title>
+    <link rel="icon" type="image/png" href="./img/favicon1.png">
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <header class="homepage" >
+        <div class="navbar">
+            <a href="#"><h1>Fast<span>Food</span></h1></a>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <img src="./img/menu-icon.png" alt="menu" class="menu-icon">
+        </div>
+        <div class="Div">
+            <h1><span>C</span>oocing<span>C</span>ourses</h1>
+            <p>
+                With one of our online cooking courses cookfood
+            you can improve your skillsin the kitchen  and
+            learn  about some of the principles behind why 
+            cooking is important, Let food be thy medicine and medicine be thy food
+            </p>
+            <a href="#" type="button" class="btn">Get Started</a>
+        </div>
+
+    </header>
+    
+</body>
+<script>
+    const menuIcon = document.querySelector(".menu-icon")
+    const navList = document.querySelector(".nav-list")
+    menuIcon.addEventListener('click',()=>{
+        navList.classList.toggle('menu-mobile')
+    }
+    )
+</script>
+</html>
